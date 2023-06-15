@@ -1,9 +1,18 @@
-body {
-    margin: 0;
+html {
+    background-color: #282D35;
     font-family: 'Inter', sans-serif;
+    background-image: url("./assets/react-icon-large.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 69%;
+    background-size: 15%;
 }
 
-.navBar {
+body {
+    margin: 0;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
     background-color: #21222A;
@@ -11,27 +20,52 @@ body {
 
 }
 
-.navBar > div {
+nav > div {
     display: inline-flex;
     align-items: center;
     
 }
 
-.navBar > div > h3 {
-    font-size: 3rem;
+nav > div > h3 {
+    font-size: 4rem;
     margin-left: 5%;
     color: #61DAFB;
     font-weight: 700;
 }
 
-.navBar > div > h4 {
+nav > div > h4 {
     display: flex;
-    font-size: 1.6rem;
+    font-size: 2rem;
     color: #DEEBF8;
     font-weight: 400;
 }
 
-.navBar > div > img {
+nav > div > img {
     height: 70px;
     width: 70px;
+}
+
+.main-content {
+    margin: 5% 12%;
+}
+
+.main-content > h1 {
+    font-size: 4rem;
+    color: #FFFFFF;
+}
+
+.main-content > ul {
+    margin-left: 8%;
+    margin-top: 5%;
+}
+
+.main-content > ul > li {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    margin: 3%;
+}
+
+li::marker {
+    color: #61DAFB;
+    font-size: 1.2em;
 }
